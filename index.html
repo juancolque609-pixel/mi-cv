@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[PENDIENTE: Nombre] | Portafolio</title>
+<meta name="description" content="Portafolio y currículum de estudiante de tecnologías de la información: desarrollo web, programación y bases de datos.">
+<meta name="theme-color" content="#070b14">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- GUÍA: todo lo que dice [PENDIENTE] (se ve subrayado en azul) es un dato que debes completar. -->
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo">[PENDIENTE: Nombre]</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" class="menu" aria-label="Principal">
+    <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#formacion">Formación</a>
+    <a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#objetivos">Objetivos</a>
+    <a href="#idiomas">Idiomas</a><a href="#cursos">Cursos</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<!-- INICIO -->
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hola, soy</p>
+    <h1><span class="ph">[PENDIENTE: Nombre completo]</span></h1>
+    <p class="role">Estudiante de Arquitectura de Plataformas y Servicios de Tecnología de la Información <span class="ph">[confirmar nombre de la carrera]</span></p>
+    <p class="lead">Estoy construyendo mi base en desarrollo web, programación y bases de datos. Me interesa la Ingeniería de Software y la Ciberseguridad, y aprendo desarrollando proyectos reales.</p>
+    <div class="actions">
+      <a href="assets/CV.pdf" class="btn primary" id="pdfBtn" download>Descargar CV (PDF)</a>
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <a href="#contacto" class="btn">Contactar</a>
+    </div>
+  </div>
+  <figure class="photo">
+    <div class="photo-ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span>Tu foto aquí<br><small>Guarda <b>assets/foto.jpg</b></small></span></div>
+    <img src="assets/foto.jpg" alt="Fotografía de perfil" onerror="this.remove()">
+  </figure>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="section">
+  <h2 class="reveal">Sobre mí</h2>
+  <div class="about reveal">
+    <div>
+      <p>Soy estudiante de tecnologías de la información y estoy en la etapa de formar mi base técnica. Me atrae entender cómo funcionan los sistemas por dentro y construir cosas que otras personas puedan usar: sitios web, tiendas online y aplicaciones.</p>
+      <p>Aprendo practicando. Combino lo que veo en clase con proyectos propios, como una tienda online con WordPress y WooCommerce que estoy desarrollando. Mi motivación es mejorar cada día como programador y avanzar hacia la Ingeniería de Software.</p>
+    </div>
+    <ul class="chips" aria-label="Intereses">
+      <li>Programación</li><li>Desarrollo web</li><li>Aplicaciones</li><li>Sistemas</li><li>Ingeniería de Software</li><li>Ciberseguridad</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion" class="section">
+  <h2 class="reveal">Formación académica</h2>
+  <article class="card reveal edu">
+    <dl>
+      <div><dt>Institución</dt><dd class="ph">[PENDIENTE: universidad o instituto]</dd></div>
+      <div><dt>Carrera</dt><dd>Arquitectura de Plataformas y Servicios de Tecnología de la Información <span class="ph">[confirmar nombre]</span></dd></div>
+      <div><dt>Ciclo actual</dt><dd class="ph">[PENDIENTE: ciclo]</dd></div>
+      <div><dt>Año de inicio</dt><dd class="ph">[PENDIENTE: año]</dd></div>
+      <div><dt>Estado</dt><dd>En curso <span class="ph">[confirmar]</span></dd></div>
+    </dl>
+  </article>
+</section>
+
+<!-- HABILIDADES: cambia --lvl (0% a 100%) y la etiqueta. Niveles de ejemplo: ajústalos a tu realidad. -->
+<section id="habilidades" class="section">
+  <h2 class="reveal">Habilidades tecnológicas</h2>
+  <p class="sub reveal">Niveles orientativos. Estoy en formación y sigo ampliando cada área.</p>
+  <div class="grid skills">
+    <article class="card reveal"><h3>Web</h3><ul class="bars">
+      <li style="--lvl:45%"><span>HTML</span><em>Básico</em><i></i></li>
+      <li style="--lvl:45%"><span>CSS</span><em>Básico</em><i></i></li>
+      <li style="--lvl:35%"><span>JavaScript</span><em>Básico</em><i></i></li>
+      <li style="--lvl:40%"><span>WordPress</span><em>Básico</em><i></i></li>
+      <li style="--lvl:35%"><span>WooCommerce</span><em>Básico</em><i></i></li>
+      <li style="--lvl:30%"><span>Elementor</span><em>Básico</em><i></i></li>
+      <li style="--lvl:30%"><span>Bootstrap</span><em>Básico</em><i></i></li>
+    </ul></article>
+    <article class="card reveal"><h3>Programación y bases de datos</h3><ul class="bars">
+      <li style="--lvl:20%"><span>Python</span><em>Inicial</em><i></i></li>
+      <li style="--lvl:35%"><span>MySQL</span><em>Básico</em><i></i></li>
+      <li style="--lvl:35%"><span>phpMyAdmin</span><em>Básico</em><i></i></li>
+    </ul></article>
+    <article class="card reveal"><h3>Herramientas</h3><ul class="bars">
+      <li style="--lvl:45%"><span>Visual Studio Code</span><em>Básico</em><i></i></li>
+      <li style="--lvl:35%"><span>Premiere Pro</span><em>Básico</em><i></i></li>
+      <li style="--lvl:35%"><span>Filmora</span><em>Básico</em><i></i></li>
+      <li style="--lvl:30%"><span>AutoCAD</span><em>Básico</em><i></i></li>
+      <li style="--lvl:25%"><span>Blender</span><em>Inicial</em><i></i></li>
+    </ul></article>
+  </div>
+</section>
+
+<!-- PROYECTOS: cambia las imágenes (assets/), textos y enlaces href="#" -->
+<section id="proyectos" class="section">
+  <h2 class="reveal">Proyectos</h2>
+  <div class="grid projects">
+    <article class="card project reveal">
+      <img src="assets/proyecto-unex.jpg" alt="Captura de la tienda UNEX" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
+      <div class="body">
+        <span class="badge live">En desarrollo</span>
+        <h3>UNEX</h3>
+        <p>Tienda online de accesorios para celulares y dispositivos electrónicos, desarrollada con WordPress y WooCommerce.</p>
+        <ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>PHP</li><li>CSS</li></ul>
+        <div class="links"><a href="#">Ver sitio</a><a href="#">Código fuente</a></div>
+      </div>
+    </article>
+    <article class="card project reveal">
+      <img src="assets/proyecto-web.jpg" alt="Proyecto académico de desarrollo web" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
+      <div class="body">
+        <span class="badge">Académico</span>
+        <h3>Proyectos académicos de desarrollo web <span class="ph">[PENDIENTE: título]</span></h3>
+        <p><span class="ph">[PENDIENTE: describe qué hiciste y qué aprendiste.]</span></p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="links"><a href="#">Ver sitio</a><a href="#">Código fuente</a></div>
+      </div>
+    </article>
+    <article class="card project reveal">
+      <img src="assets/proyecto-datos.jpg" alt="Proyecto de programación y bases de datos" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
+      <div class="body">
+        <span class="badge">Académico</span>
+        <h3>Programación y bases de datos <span class="ph">[PENDIENTE: título]</span></h3>
+        <p><span class="ph">[PENDIENTE: describe el proyecto.]</span></p>
+        <ul class="tags"><li>Python</li><li>MySQL</li><li>phpMyAdmin</li></ul>
+        <div class="links"><a href="#">Código fuente</a></div>
+      </div>
+    </article>
+    <article class="card project reveal empty">
+      <div class="body"><span class="badge">Próximamente</span><h3>Tu próximo proyecto</h3><p>Aquí se sumarán nuevos proyectos a medida que avance mi formación.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section id="objetivos" class="section">
+  <h2 class="reveal">Objetivos profesionales</h2>
+  <p class="sub reveal">Hacia dónde quiero avanzar. Son metas, no logros alcanzados.</p>
+  <div class="grid goals">
+    <article class="card reveal"><h3>Ingeniería de Software</h3><p>Especializarme en diseñar y construir software de calidad.</p></article>
+    <article class="card reveal"><h3>Programación</h3><p>Fortalecer mi lógica y dominar más lenguajes y herramientas.</p></article>
+    <article class="card reveal"><h3>Ciberseguridad</h3><p>Aprender a proteger sistemas y datos desde el diseño.</p></article>
+    <article class="card reveal"><h3>Soluciones digitales</h3><p>Desarrollar productos útiles, desde sitios web hasta aplicaciones.</p></article>
+    <article class="card reveal"><h3>Experiencia internacional</h3><p>Trabajar y aprender en entornos y equipos de otros países.</p></article>
+  </div>
+</section>
+
+<!-- IDIOMAS -->
+<section id="idiomas" class="section">
+  <h2 class="reveal">Idiomas</h2>
+  <div class="grid langs">
+    <article class="card reveal"><h3>Español</h3><p class="ph">[PENDIENTE: nivel]</p></article>
+    <article class="card reveal"><h3>Inglés</h3><p class="ph">[PENDIENTE: nivel o quitar]</p></article>
+    <article class="card reveal"><h3><span class="ph">[Otro idioma]</span></h3><p class="ph">[PENDIENTE: nivel o quitar]</p></article>
+  </div>
+</section>
+
+<!-- CURSOS Y CERTIFICACIONES: copia el bloque de ejemplo (comentado) para cada curso -->
+<section id="cursos" class="section">
+  <h2 class="reveal">Cursos y certificaciones</h2>
+  <div class="grid courses">
+    <!--
+    <article class="card reveal"><h3>Nombre del curso</h3><p>Institución · Año</p><a href="#">Ver certificado</a></article>
+    -->
+    <article class="card reveal empty"><h3>Aún sin cursos registrados</h3><p>Aquí agregaré mis capacitaciones y certificaciones cuando las complete.</p></article>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+  <h2 class="reveal">Contacto</h2>
+  <div class="contact reveal">
+    <ul class="clist">
+      <li><b>Correo</b><a href="mailto:tu-correo@ejemplo.com" id="mailLink" class="ph">[PENDIENTE: correo]</a></li>
+      <li><b>Teléfono</b><a href="tel:+510000000000" class="ph">[PENDIENTE: teléfono]</a></li>
+      <li><b>Ubicación</b><span class="ph">[PENDIENTE: ciudad, país]</span></li>
+      <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener" class="ph">[PENDIENTE: enlace]</a></li>
+      <li><b>GitHub</b><a href="https://github.com/tu-usuario" target="_blank" rel="noopener" class="ph">[PENDIENTE: enlace]</a></li>
+      <li><b>Otro</b><a href="#" class="ph">[PENDIENTE: enlace]</a></li>
+    </ul>
+    <form id="mailForm" class="card">
+      <h3>Envíame un mensaje</h3>
+      <label>Tu nombre<input name="nombre" required autocomplete="name"></label>
+      <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Enviar por correo</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><p>© <span id="year"></span> <span class="ph">[PENDIENTE: Nombre]</span>. Portafolio hecho con HTML, CSS y JavaScript.</p></footer>
+<button class="to-top" id="toTop" aria-label="Volver al inicio">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>

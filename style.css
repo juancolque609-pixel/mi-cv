@@ -156,3 +156,12 @@ form input:focus,form textarea:focus{outline:0;border-color:var(--blue)}
 .tool:hover .ico{box-shadow:0 0 18px var(--glow)}
 .note{margin-top:.2rem;font-size:.95rem}
 .goals h3{margin:0}
+
+/* ===== Ajustes v3: foto con borde luminoso e imágenes de proyectos ===== */
+.photo{border:2px solid var(--blue-2);box-shadow:0 0 0 6px rgba(47,107,255,.12),0 0 28px 2px var(--glow),0 0 70px 6px rgba(47,107,255,.25);animation:rise 1s .3s both,pulse 4s 1.3s ease-in-out infinite}
+.photo::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 22px rgba(91,149,255,.35);pointer-events:none}
+@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(47,107,255,.18),0 0 40px 6px rgba(47,107,255,.5),0 0 90px 10px rgba(47,107,255,.25)}}
+.pimg{position:relative;margin:.7rem .7rem 0;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.pimg img{border:0;aspect-ratio:16/9;width:100%;height:auto;object-fit:cover;transition:transform .5s}
+.project:hover .pimg img{transform:scale(1.04)}
+.pimg figcaption{position:absolute;right:.5rem;bottom:.5rem;padding:.1rem .6rem;border-radius:999px;font-size:.78rem;background:rgba(7,11,20,.8);color:var(--muted);border:1px solid var(--line)}

@@ -568,79 +568,75 @@
 <section id="contacto" class="section">
   <h2 class="reveal">Contacto</h2>
 
-  <p class="sub reveal">
-    Puedes comunicarte conmigo mediante los siguientes medios.
-    Estaré atento a tus consultas y oportunidades de colaboración.
-  </p>
+  <div class="contact reveal">
 
-  <div class="grid">
-
-    <article class="card reveal">
-      <h3>Información de contacto</h3>
-
-      <p><b>Correo electrónico:</b></p>
-      <p>
+    <!-- Información de contacto -->
+    <ul class="clist">
+      <li>
+        <strong>Correo</strong>
         <a id="mailLink" href="mailto:juancolque609@gmail.com">
           juancolque609@gmail.com
         </a>
-      </p>
+      </li>
 
-      <p><b>Teléfono:</b></p>
-      <p>
+      <li>
+        <strong>Teléfono</strong>
         <a href="tel:+51938245471">+51 938245471</a>
-      </p>
+      </li>
 
-      <p><b>Ubicación:</b></p>
-      <p>Santa Lucía, Perú</p>
+      <li>
+        <strong>Ubicación</strong>
+        <span>Santa Lucia, Perú</span>
+      </li>
 
-      <p><b>GitHub:</b></p>
-      <p>
+      <li>
+        <strong>LinkedIn</strong>
+        <span>Próximamente</span>
+      </li>
+
+      <li>
+        <strong>GitHub</strong>
         <a href="https://github.com/juancolque609-pixel"
            target="_blank" rel="noopener">
           Mi perfil de GitHub
         </a>
-      </p>
+      </li>
 
-      <p><b>LinkedIn:</b></p>
-      <p>Próximamente</p>
-    </article>
+      <li>
+        <strong>Otro</strong>
+        <span>Disponible para aprender y colaborar en proyectos.</span>
+      </li>
+    </ul>
 
-    <article class="card reveal">
+    <!-- Formulario -->
+    <form id="mailForm" class="card">
       <h3>Envíame un mensaje</h3>
 
-      <form id="mailForm">
-        <label for="nombre">Tu nombre</label>
-        <input type="text" id="nombre" name="nombre"
-          placeholder="Escribe tu nombre" required>
+      <label for="nombre">Tu nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required
+      >
 
-        <label for="mensaje">Tu mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5"
-          placeholder="Escribe tu mensaje..." required></textarea>
+      <label for="mensaje">Tu mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="4"
+        placeholder="Escribe tu mensaje..."
+        required
+      ></textarea>
 
-        <button type="submit" class="btn primary">
-          Enviar mensaje
-        </button>
-      </form>
-    </article>
+      <button type="submit" class="btn primary">
+        Enviar por correo
+      </button>
+    </form>
 
   </div>
 </section>
-
-</main>
-
-<!-- PIE DE PÁGINA -->
-<footer class="footer">
-  <p>
-    © <span id="year"></span> Edgar Colque.
-    Todos los derechos reservados.
-  </p>
-</footer>
-
-<!-- BOTÓN VOLVER ARRIBA -->
-<button id="toTop" class="to-top" type="button"
-  aria-label="Volver arriba">↑</button>
-
-<script src="script.js"></script>
 
 </body>
 </html>

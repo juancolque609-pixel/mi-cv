@@ -143,3 +143,16 @@ form input:focus,form textarea:focus{outline:0;border-color:var(--blue)}
   .bars i::after{width:var(--lvl)!important;background:#1a4fd0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .card{break-inside:avoid;box-shadow:none}
 }
+
+/* ===== Ajustes v2: foto, listas de habilidades, herramientas ===== */
+.photo img{object-position:50% 15%}
+.mini{font-size:1rem;margin-bottom:.8rem;color:var(--muted);font-weight:600}
+.sub-title{font-size:1.3rem;margin:2.8rem 0 1.2rem}
+.skill-list li{position:relative;padding:.3rem 0 .3rem 1.1rem;color:#c9d4e6}
+.skill-list li::before{content:"";position:absolute;left:0;top:.95em;width:6px;height:6px;border-radius:50%;background:var(--blue);box-shadow:0 0 8px var(--blue)}
+.tools{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.tool{display:flex;align-items:center;gap:.9rem;padding:1rem 1.2rem;font-weight:600}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(47,107,255,.14);border:1px solid rgba(47,107,255,.5);color:var(--blue-2);font:700 .95rem var(--font-head);transition:box-shadow .3s}
+.tool:hover .ico{box-shadow:0 0 18px var(--glow)}
+.note{margin-top:.2rem;font-size:.95rem}
+.goals h3{margin:0}

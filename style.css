@@ -453,183 +453,74 @@ form input:focus,form textarea:focus{outline:0;border-color:var(--blue)}
   .cert-dialog{max-width:98vw;max-height:92vh}
   .cert-dialog img{max-height:75vh}
 }
-/* =========================================
-   CONTACTO
-========================================= */
-
-#contacto {
-  scroll-margin-top: 100px;
-}
-
-#contacto > .sub {
-  max-width: 750px;
-  margin-bottom: 2rem;
-}
-
-#contacto > .grid {
+/* ===== CONTACTO: diseño original ===== */
+.contact {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
-#contacto .card {
-  padding: 1.8rem;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--surface);
+.clist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#contacto .card h3 {
-  margin-bottom: 1.3rem;
-  font-size: 1.2rem;
+.clist li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
 }
 
-#contacto .card p {
-  margin: 0.5rem 0 1rem;
+.clist strong {
+  color: var(--text);
+}
+
+.clist a,
+.clist span {
   color: var(--muted);
   overflow-wrap: anywhere;
 }
 
-#contacto .card p b {
-  color: var(--text);
-}
-
-#contacto .card a {
-  color: var(--blue);
+.clist a {
   text-decoration: none;
-  transition: color 0.2s;
 }
 
-#contacto .card a:hover {
-  text-decoration: underline;
+.clist a:hover {
+  color: var(--primary);
 }
-
-/* Formulario */
 
 #mailForm {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-}
-
-#mailForm label {
-  color: var(--text);
-  font-weight: 600;
-  margin-top: 0.3rem;
+  gap: 12px;
 }
 
 #mailForm input,
 #mailForm textarea {
   width: 100%;
-  padding: 0.9rem 1rem;
-  border: 1px solid var(--line);
+  padding: 12px;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  outline: none;
-  background: var(--bg);
+  background: var(--card);
   color: var(--text);
   font: inherit;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-#mailForm input:focus,
-#mailForm textarea:focus {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px var(--glow);
 }
 
 #mailForm textarea {
   resize: vertical;
-  min-height: 130px;
 }
 
-#mailForm input::placeholder,
-#mailForm textarea::placeholder {
-  color: var(--muted);
-  opacity: 0.8;
-}
-
-#mailForm button {
-  margin-top: 0.8rem;
-  cursor: pointer;
-  font: inherit;
-}
-
-/* =========================================
-   VENTANA DE CERTIFICADOS
-========================================= */
-
-.cert-dialog {
-  margin: auto;
-  max-width: 96vw;
-  max-height: 94vh;
-  padding: 0;
-  border: 1px solid var(--blue);
-  border-radius: 16px;
-  background: var(--surface);
-  color: var(--text);
-  overflow: auto;
-  box-shadow: 0 0 60px -10px var(--glow);
-}
-
-.cert-dialog::backdrop {
-  background: rgba(7, 11, 20, 0.88);
-  backdrop-filter: blur(6px);
-}
-
-.cert-dialog img {
-  display: block;
-  max-width: 100%;
-  max-height: 80vh;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-}
-
-.cert-dialog p {
-  padding: 0.8rem 3.5rem 0.9rem 1.2rem;
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-.cert-close {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--blue);
-  background: rgba(7, 11, 20, 0.85);
-  color: var(--text);
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.cert-close:hover {
-  background: var(--blue);
-}
-
-/* =========================================
-   DISEÑO RESPONSIVE
-========================================= */
-
-@media (max-width: 700px) {
-  #contacto > .grid {
+@media (max-width: 768px) {
+  .contact {
     grid-template-columns: 1fr;
   }
 
-  #contacto .card {
-    padding: 1.3rem;
-  }
-
-  .cert-dialog {
-    max-width: 98vw;
-    max-height: 92vh;
-  }
-
-  .cert-dialog img {
-    max-height: 75vh;
+  .clist li {
+    grid-template-columns: 90px 1fr;
   }
 }

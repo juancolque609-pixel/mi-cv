@@ -165,3 +165,23 @@ form input:focus,form textarea:focus{outline:0;border-color:var(--blue)}
 .pimg img{border:0;aspect-ratio:16/9;width:100%;height:auto;object-fit:cover;transition:transform .5s}
 .project:hover .pimg img{transform:scale(1.04)}
 .pimg figcaption{position:absolute;right:.5rem;bottom:.5rem;padding:.1rem .6rem;border-radius:999px;font-size:.78rem;background:rgba(7,11,20,.8);color:var(--muted);border:1px solid var(--line)}
+/* ===== Cursos y certificaciones (pegar AL FINAL de style.css) ===== */
+.certs{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.cert{padding:0;display:flex;flex-direction:column}
+.cert-img{position:relative;display:block;width:100%;padding:0;border:0;border-bottom:1px solid var(--line);background:var(--bg);cursor:zoom-in;overflow:hidden}
+.cert-img img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .5s}
+.cert:hover .cert-img img{transform:scale(1.04)}
+.zoom{position:absolute;right:.6rem;bottom:.6rem;padding:.2rem .8rem;border-radius:999px;font:600 .85rem var(--font-body);background:rgba(7,11,20,.85);color:var(--text);border:1px solid var(--blue);transition:opacity .2s}
+@media(hover:hover){.zoom{opacity:0}.cert-img:hover .zoom,.cert-img:focus-visible .zoom{opacity:1}}
+.cert .body{display:flex;flex-direction:column;gap:.3rem;flex:1;padding:1.2rem 1.3rem 1.4rem}
+.cert h3{font-size:1.05rem;line-height:1.3;margin:.5rem 0 .4rem}
+.cert .meta{color:var(--muted);font-size:.95rem}
+.cert .meta b{color:#c9d4e6;font-weight:600}
+
+/* Ventana de ampliación */
+.cert-dialog{margin:auto;max-width:96vw;max-height:94vh;padding:0;border:1px solid var(--blue);border-radius:16px;background:var(--surface);color:var(--text);overflow:auto;box-shadow:0 0 60px -10px var(--glow)}
+.cert-dialog::backdrop{background:rgba(7,11,20,.88);backdrop-filter:blur(6px)}
+.cert-dialog img{display:block;max-width:100%;max-height:80vh;width:auto;height:auto;margin:0 auto}
+.cert-dialog p{padding:.8rem 3.5rem .9rem 1.2rem;font-size:.95rem;color:var(--muted)}
+.cert-close{position:absolute;top:.5rem;right:.5rem;width:40px;height:40px;border-radius:50%;border:1px solid var(--blue);background:rgba(7,11,20,.85);color:var(--text);font-size:1.5rem;line-height:1;cursor:pointer;transition:background .2s}
+.cert-close:hover{background:var(--blue)}
